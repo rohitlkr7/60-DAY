@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculator</title>
+    <style>
+        #minicalculator{
+            width: 80%;
+            margin: auto;
+            border: 2px solid green;
+
+        }
+        #box{
+            margin-left: 30%;
+        }
+        h1{
+            text-align: center;
+        }
+       input{
+           margin-left: 50px;
+       }
+       #btn{
+        margin-left: 40%;
+        gap: 10px;
+       }
+     </style>
+</head>  
+<body>
+    <div id=" minicalculator">
+        <h1>CALCULATOR</h1>
+        <div id="box">
+            <input type="number" id="num1" placeholder="Enter your 1st number">
+            <input type="number" id="num2" placeholder="Enter your 2nd number">
+        </div>
+        <br>
+        <br>
+        <div id="btn">
+            <button onclick="calculate('add')">ADD</button>
+            <button onclick="calculate('subtract')">Substract</button>
+            <button onclick="calculate('multiply')">Multiply</button>
+            <button onclick="calculate('divide')">Divide</button>
+        </div>
+    </div>
+
+
+    <script>
+        function calculate(operation) {
+          var num1 = parseFloat(document.getElementById("num1").value);
+          var num2 = parseFloat(document.getElementById("num2").value);
+          var result;
+    
+          switch(operation) {
+            case 'add':
+              result = num1 + num2;
+              break;
+            case 'subtract':
+              result = num1 - num2;
+              break;
+            case 'multiply':
+              result = num1 * num2;
+              break;
+            case 'divide':
+              if(num2 != 0) {
+                result = num1 / num2;
+              } else {
+                alert("Cannot divide by zero!");
+                return;
+              }
+              break;
+            default:
+              alert("Invalid operation");
+              return;
+          }
+    
+          alert("Result: " + result);
+        }
+      </script>
+</body>
+</html>

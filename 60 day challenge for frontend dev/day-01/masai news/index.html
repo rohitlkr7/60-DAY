@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container{
+         width: 90% ;
+        
+         margin: auto;
+         text-align: center;
+         
+       }
+       #mainbox{
+        display: flex;
+        margin: auto;
+        gap: 10px;
+       }
+       #box{
+         width: 35%;
+         height: 450px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         gap: 5px;
+         border-radius: 10px;
+         
+       }
+       img{
+        width: 95%;
+        height: 270px;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px ;
+       }
+       span{
+        color:red;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 class="news">Masai <span>News</span></h1>
+        <div id="mainbox">
+          <div id="box">
+             <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg" alt="">
+             <h2>Empowering Education Through GenAI</h2>
+          </div>
+          <div id="box">
+             <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thungy_1_420b226e5b.webp" alt="">
+             <h2>Masai School targets fivefold revenue growth in three years</h2>
+          </div>
+          <div id="box">
+              <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thingy_2_f2c52e6fcf.webp" alt="">
+              <h2>Beyond Degrees: Embracing Alternative Credentialing and Micro-learning in Tech Recruitment</h2>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

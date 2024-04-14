@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid weekly schedule</title>
+    <style>
+        #container{
+            width: 90%;
+            height:fit-content;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+        }
+        #container-b{
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(10,1fr);
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            align-items: center;
+            justify-items: center;
+            
+        }
+        .box{
+           width: 155px;
+           height: 35px ;
+           
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 13px;
+            
+        }
+        #color1{
+            background-color: rgb(129, 197, 197);
+            color: black;
+            font-weight: bolder;
+        }
+        #color2{
+            background-color: rgb(240, 184, 194);
+            color:black;
+            font-weight: bolder;
+        }
+        #color3{
+            background-color: rgb(238, 238, 129);
+            color: black;
+            font-weight: bolder;
+        }
+        #notes{
+            width: 98%;
+            height: 35px;
+            background-color: rgb(129, 197, 197);
+            color: black;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 20px;
+            padding-left: 15px;
+            padding-top: 14px;
+            font-size: large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+     <div id="container">
+          <div id="container-a">
+            <h1>Weekly schedule</h1>
+          </div>
+          <div id="container-b">
+                <div class="box1"></div>
+                <div id="color2" class="box">Monday</div>
+                <div id="color3" class="box">Tuesday</div>
+                <div id="color2" class="box">Wednesday</div>
+                <div id="color3" class="box">Thursday</div>
+                <div id="color2" class="box">Friday</div>
+                <div id="color1" class="box">08:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">09:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">10:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">11:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">12:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">01:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">02:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">03:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color1" class="box">04:00</div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+                <div id="color3" class="box"></div>
+                <div id="color2" class="box"></div>
+            </div>
+            <div id="notes">Note:-</div>
+     </div>
+</body>
+</html>
